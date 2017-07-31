@@ -1,0 +1,9 @@
+<form action="/home/update/<%= @edit_post.id %>" method="POST">
+  <div class="form-group">
+    <input type="text" name="title" class="form-control" value="<%= @edit_post.title %>">
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" name="content"><%= @edit_post.content %></textarea>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
