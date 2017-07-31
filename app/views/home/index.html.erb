@@ -26,13 +26,10 @@
     <p>작성자: <%= post.user.email %></p>
     <p> <%= post.created_at %> </p>
     <p> <%= post.content %> </p>
-    
-    <% if current_user.email == post.user.email %>
     <p>
       <a href="/home/edit/<%= post.id %>">[수정]</a>
       <a href="/home/destroy/<%= post.id %>" id="delete">[삭제]</a>
     </p>
-    <% end %>
     <hr/>
   <% end %>
 

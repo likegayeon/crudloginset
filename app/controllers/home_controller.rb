@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @post = Post.all.reverse
+    @post = Post.all
   end
 
   def create
